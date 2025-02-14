@@ -3,7 +3,7 @@ def travel_destination(destination_options):
         "Beach": ["Cancun", "Bora Bora", "Turks & Caicos"],
         "International": ["Italy", "Tokyo", "Costa Rica"],
         "Camping": ["California", "Nevada", "Montana"],
-        "City": ["New York City", "London", "Paris"]
+        "City": ["New York City", "California", "Miami"]
         }
 
     if destination_options in destinations: 
