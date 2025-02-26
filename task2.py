@@ -1,5 +1,5 @@
 
-destination_list = ["beach,", "international,", "camping"] # List of joke options.
+destination_list = ["beach", "international", "camping"] # List of joke options.
 name = input("What is your name? ") # Asks for User's name.
 print(f"Welcome {name}!")  # Welcomes the User.
 
@@ -10,15 +10,19 @@ if destination == "no":
     print("Okay suit yourself!")
 while destination == "yes":
     print("Great, Let's Play")
+    
     question = input("Do you want beach, international, or camping destinations?") # Gives the User 3 vacation types to choose from
     question = question.lower() # Makes "question" input lowercase, which allows for all inputs to be recognized no matter the capitilization.
     
     if question == "beach": #  Option #1.
         print("Cancun, Bora Bora, or Turks & Caicos.")
         interest1 = input("Do you want other destination suggestions?")
-        more1 = input("Do you want beach, international, or camping destinations?")
+    if interest1 == "yes":
+       input = ("Do you want beach, international, or camping destinations?")
+    if interest1 == "no":
+        print("Okay")
 
-    elif question == "international": #  Option #2.
+    if question == "international": #  Option #2.
         print("Italy, Tokyo, Costa Rica")
         interest1 = input("Do you want other destination suggestions?")
         more1 = input("Do you want beach, international, or camping destinations?")
